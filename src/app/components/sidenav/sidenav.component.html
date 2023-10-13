@@ -1,14 +1,13 @@
-<!DOCTYPE html> 
-
 <html>
-    <head>
+    
+<head>
     <title>sidenav</title>
     <link rel="stylesheet" href="sidenav.component.scss" />
     </head>
 
 <body>
 <nav>
-<ul>
+
     <div class="logo">
         
             <img src="assets\images\logo.png" alt="logo">
@@ -16,10 +15,11 @@
             
     </div>
 <br>
+<ul>
     <li>
-        <a href="#">
-        <i class=""></i>
-        <img src="assets\images\dashboard.png" alt="dashboard" width="20" height="25">
+        <a routerLink="/dashboards">
+        <i class="dashboard"></i>
+        <img src="assets\images\dashboard.png" width="20" height="25">
         <span class="nav item">Dashboard</span>
     </a>
     </li>
@@ -39,7 +39,8 @@
         <span class="nav item">Products</span>
     </a>
     </li>
-
+</ul>
+<ul>
     <li>
         <a href="#" class="settings">
         <i class="settings"></i>
@@ -49,7 +50,7 @@
     </li> 
 
     <li>
-        <a routerLink="/logout" class="logout">
+        <a routerLink="#" class="logout">
         <i class="logout"></i>
         <img src="assets\images\logout.png" alt="logout" width="20" height="25">
         <span class="nav item">Log out</span>

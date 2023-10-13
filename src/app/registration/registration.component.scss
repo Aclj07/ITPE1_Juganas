@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: normal;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    font-style: oblique;
+    text-shadow: brown;
+    color: black; 
+    }
+
+.container h1{
+    color: black;
+}
+.container{
+    width: 450px;
+    max-width: 650px;
+    background:transparent;
+    border: 2px solid rgba(2555, 255, 255, 2);
+    backdrop-filter: blur (20px);
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: inset -2px 2px 2px #A47C54;
+}
+
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 10px;
+   
+}
+
+.user-input-box label{
+    width: 95%;
+    color: rgb(27, 24, 24);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    outline: none;
+    padding: 0 10px;
+    border: 2px solid #D2C0B4;
+    border-radius: 40px;
+}
+
+.gender-title{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: brown;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.gender-category{
+    margin: 10px 0;
+    color: brown;
+    font-weight: bold;
+}
+
+.gender-category label{
+    padding: 5px 5px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.submit-btn input{  
+    cursor: pointer;
+}
+
+.submit-btn{
+    margin-top: 40px;
+    
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+  
+}
+
+.submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 10;
+    border: none;
+    border-radius: 3px;
+    color: rgb(92, 92, 92);
+    background: #D2C0B4;
+}
+
+.submit-btn input:hover{
+    background: rgb(150, 57, 57);
+    color: white;
+}
+
+
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display:contents;
+        justify-content:flex-start;
+        width: 50%;
+    }
+
+    .main-user-info{
+        max-height: 350px;
+        overflow: auto;
+    }
